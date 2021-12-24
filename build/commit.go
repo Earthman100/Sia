@@ -1,5 +1,5 @@
 package build
-
+https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjxAwXjeu.woff2
 // GitRevision and BuildTime get assigned via the Makefile when built.
 var (
 	// GitRevision string
