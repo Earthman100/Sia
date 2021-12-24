@@ -1,0 +1,27 @@
+name: Makefile CI
+
+on:https://github.com/Earthman100/name-Octo-Organization-CI-on-push-branches-default-branch-pull_request-branch/runs/4626009353?check_suite_focus=true
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: configure
+      run: ./configure
+      
+    - name: Install dependencies
+      run: make
+      
+    - name: Run check
+      run: make check
+      
+    - name: Run distcheck
+      run: make distcheck
