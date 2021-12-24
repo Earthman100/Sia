@@ -3,7 +3,8 @@ name: Makefile CI
 on:
  push:
  Package:
- https://github.com/Earthman100/name-Octo-Organization-CI-on-push-branches-default-branch-pull_request-branch/runs/4626009353?check_suite_focus=true:Build
+ go get 'https://github.com/Earthman100/name-Octo-Organization-CI-on-push-branches-default-branch-pull_request-branch/runs/4626009353?check_suite_focus=true' 
+ makefile.yml:_Build Package
   
     branches: [ master ]
   pull_request:
